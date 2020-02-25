@@ -1,39 +1,29 @@
 # react_native_study
 
 #### 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+1.react_native是基于React这门框架语法来进行开发的：
+2.RN中，提供了移动端专用的一些组件， 网页中的div,p,img的标签都不可以用只能使用RN原有的组件。
+3.把一个RN项目完整的发布到搜集上运行，结合安卓打包签名，结合Rn提供的打包命令，进行完整的spk文件发布
+最终大部出来的是Release版本的项目，可以上传到应用商店，
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+装好相关开发环境。详情见官网。
+1.初始化项目：   npm install -g yarn react-native-cli 
+                react-native init 项目名
+                进入新建的项目目录，执行升级命令：cd 项目名
+2.打开虚拟设备，可以使用androidstudio的  AVD manager，  打开成功后：在cmd中输入  adb devices 查看是否有设备连接
+3.成功连接后，在初始化好的项目中，react-native run-android 将项目安装到手机上
+4.手机配置使用数据线，把手机连接到电脑上。
+adb devices  安卓开发环境提供的
+5.构建项目时使用react-native run-android将项目安装到手机或者虚拟设备上即可，之后使用react-native start即可
+6.react-native start  后出现的黑框是reactnative packager 它可以帮助我们试试编译源代码，并把结果应用到手机上
+开发者可以实时看到项目的状态。这个编译代码的功能运行在8081端口，每当有新的代码编译应用到手机上，就会多一行结果。
 
 
-#### 码云特技
+项目结构及运行：
+1.//在rn中只能使用.js作为组件的后缀名,不能使用.jsx后缀
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+//不推荐npm下载包，下载速度慢，推荐使用yarn add 包名
+
+//修改了任何Android目录下的任何文件后，要react-native run-android
+
+项目有问题有时间重新修改
